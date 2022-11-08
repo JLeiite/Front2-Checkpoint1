@@ -11,10 +11,14 @@ const formButton = document.querySelector(".form-button");
 
 // BOTÃO > Definindo botão desabilitado como padrão
 formButton.disabled = true;
+
 formControl.addEventListener("keyup", validarBotao);
 function validarBotao() {
     if (inputDestino.value === "" || inputDescricao.value === "" || inputImagem.value === "" || inputNota.value === "") {
         formButton.disabled = true; // Desabilitar botão enquanto input estiver vazio
+    }else if(inputDestino.value.length < 4){
+        formButton.disabled = true; // Desabilitar botão enquanto o valor da descrição for menor que 4 caracteres
+        alert("Destino precisa ter mais de 4 itens");
     }else if(inputDescricao.value.length < 4){
         formButton.disabled = true; // Desabilitar botão enquanto o valor da descrição for menor que 4 caracteres
         alert("Insira uma descrição maior");
