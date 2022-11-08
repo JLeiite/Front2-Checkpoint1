@@ -15,9 +15,6 @@ formControl.addEventListener("keyup", validarBotao);
 function validarBotao() {
     if (inputDestino.value === "" || inputDescricao.value === "" || inputImagem.value === "" || inputNota.value === "") {
         formButton.disabled = true; // Desabilitar botão enquanto input estiver vazio
-    }else if(inputDestino.value.length < 4){
-        formButton.disabled = true; // Desabilitar botão enquanto o valor da descrição for menor que 4 caracteres
-        alert("Insira um destino com mais de 4 letras");
     }else if(inputDescricao.value.length < 4){
         formButton.disabled = true; // Desabilitar botão enquanto o valor da descrição for menor que 4 caracteres
         alert("Insira uma descrição maior");
@@ -49,8 +46,8 @@ formulario.addEventListener("submit", function(event) {
         <div class="card bg-light border-secondary p-2 mt-3 ml-3" style="width: 20rem;">
         <img class="card-img-top" src="${inputImagem.value}" alt="Card image cap">
         <div class="card-body">
-        <h5 class="card-title"> ${inputDestino.value} <span class="badge text-light small" style="background-color:${inputColor.value}"><i class="bi bi-star"></i> ${inputNota.value}</span> </h5>
-        <p class="card-text">${inputDescricao.value}</p>
+        <h5 class="card-title"> ${destino.value} <span class="badge text-light small" style="background-color:${color.value}"><i class="bi bi-star"></i> ${nota.value}</span> </h5>
+        <p class="card-text">${descricao.value}</p>
         </div>
         </div>`;
         
@@ -61,6 +58,5 @@ formulario.addEventListener("submit", function(event) {
     const card = document.querySelector(".addCard");
 
     // Adicionando ao código
-    card.appendChild(addCard);
-       
+    card.appendChild(addCard);   
 })
