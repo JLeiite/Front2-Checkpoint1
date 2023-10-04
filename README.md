@@ -1,7 +1,7 @@
 # Front2-Checkpoint1
-# Registro de viagem
+<h3>Registro de viagem</h3>
 
-Faça o download do projeto ou abra o arquivo pelo [GitHub Pages](https://jleiite.github.io/Front2-Checkpoint1/).
+Faça o download do projeto ou abra o arquivo pelo: [GitHub Pages](https://jleiite.github.io/Front2-Checkpoint1)
 
 - Insira a cidade de destino de sua viagem
 - Deixe uma breve descrição de como foi sua viagem
