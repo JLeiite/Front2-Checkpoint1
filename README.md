@@ -1,4 +1,3 @@
-# Front2-Checkpoint1
 <h3>Registro de viagem</h3>
 
 Faça o download do projeto ou abra o arquivo pelo: [GitHub Pages](https://jleiite.github.io/Front2-Checkpoint1)
