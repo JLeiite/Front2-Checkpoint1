@@ -10,6 +10,6 @@ Registro de viagem
 - Selecione uma cor para a nota de sua viagem
 - Faça o envio do formulário e tenha um registro de sua viagem especial.
 
-![Registros](/assets/images/print.png)
+![Registros](/assets/print.png)
 
 
